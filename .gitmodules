@@ -1,0 +1,3 @@
+[submodule "system/pear"]
+	path = system/pear
+	url = https://github.com/gliborgmx/pear.git
