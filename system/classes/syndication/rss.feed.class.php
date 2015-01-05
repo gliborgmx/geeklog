@@ -149,7 +149,7 @@ class RSS20 extends FeedParserBase
         global $_CONF;
 
         $xml = parent::_feedHeader()
-             . '<rss version="2.0"' . $this->_injectNamespaces() . '>' . self::LB
+             . '<rss version="2.0" ' . $this->_injectNamespaces() . '>' . self::LB
              . '<channel>' . self::LB
              . '<title>' . $this->_safeXML($this->title) . '</title>' . self::LB
              . '<link>' . $this->_safeXML($this->sitelink, false) . '</link>' . self::LB;
