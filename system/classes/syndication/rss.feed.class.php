@@ -163,10 +163,10 @@ class RSS20 extends FeedParserBase
         if (strlen($this->sitecontact) > 0) {
             $xml .= '<managingEditor>'
                  .  $this->_safeXML($this->sitecontact)
-                 .  '</managingEditor>' . self::LB
+                 .  ' (administrator)</managingEditor>' . self::LB
                  .  '<webMaster>'
                  .   $this->_safeXML($this->sitecontact)
-                 .  '</webMaster>' . self::LB;
+                 .  ' (administrator)</webMaster>' . self::LB;
         }
 
         if (strlen($this->copyright) > 0) {
